@@ -3,323 +3,511 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T. Gangadhar Reddy | Professional Portfolio</title>
-    <meta name="description" content="Portfolio of T. Gangadhar Reddy, specializing in AI, Data Science, and Full Stack Development.">
-    <!-- Google Fonts: Inter for clean typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Boxicons for modern icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>T. Gangadhar Reddy | AI & DS Portfolio</title>
+    <meta name="description" content="Portfolio of T. Gangadhar Reddy, specializing in Artificial Intelligence, Data Science, and Full-Stack development.">
+    <!-- Google Fonts: Inter for reading, Outfit for tech headers -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern cyber icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- GSAP & ScrollTrigger CDN for high-end micro-animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Interactive Background Nodes -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-blur"></div>
+
+    <!-- Header Navbar -->
     <header class="header">
-        <a href="#" class="logo">TGR.</a>
+        <a href="#home" class="logo">TGR<span class="pulse-dot">.</span></a>
         <nav class="navbar">
-            <a href="#about" class="active">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-            <a href="resume.pdf" target="_blank"><i class='bx bx-file' style="font-size: 0.85rem; margin-right: 2px; vertical-align: middle;"></i> Resume</a>
+            <a href="#about" class="nav-link active">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="resume.pdf" target="_blank" class="nav-resume-btn"><i class='bx bx-file'></i> Resume</a>
         </nav>
         <div class="menu-icon"><i class='bx bx-menu'></i></div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="hero-greeting">Hello, I'm</span>
-            <h1 class="hero-name">T. Gangadhar Reddy</h1>
-            <h2 class="hero-role">AI & Data Science</h2>
-            <p class="hero-desc">
-                Computer Science Engineering student specializing in AI & Data Science. Passionate about building scalable applications, data analytics, and learning modern technologies.
-            </p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Let's Connect</a>
-                <a href="#projects" class="btn btn-secondary">View Work</a>
-                <a href="resume.pdf" target="_blank" class="btn btn-secondary"><i class='bx bx-file' style="vertical-align: middle; margin-right: 4px;"></i> View Resume</a>
-            </div>
-            <div class="hero-socials">
-                <a href="https://www.linkedin.com/in/t-gangadhar-reddy-149904313" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/gangadharreddy065-create" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="mailto:gangadharreddy065@gmail.com"><i class='bx bx-envelope'></i></a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="image-wrapper">
-                <img src="profile.png" alt="T. Gangadhar Reddy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Gangadhar+Reddy&background=0D8ABC&color=fff&size=400';">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Career Objective</h2>
-            <div class="about-content">
-                <p>
-                    I am a Computer Science Engineering student specializing in <strong>AI & Data Science</strong> with a strong interest in Full Stack Development, Data Analytics, and AI-driven applications. I am skilled in Python, SQL, HTML/CSS, GitHub, and problem-solving, with hands-on experience gained through hackathons, internships, and academic projects. I am deeply passionate about building scalable applications and continuously learning modern technologies to drive meaningful impact.
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-greeting glitch-text" data-text="&gt; INITIALIZING AI...">&gt; INITIALIZING AI...</span>
+                <h1 class="hero-name">I'm <span class="gradient-text">Gangadhar Reddy</span></h1>
+                <h2 class="hero-role">Building Intelligent Experiences</h2>
+                <p class="hero-desc">
+                    Computer Science Engineering student specializing in <strong>AI & Data Science</strong>. Blending machine learning, computer vision, and modern full-stack development to create tomorrow's digital solutions.
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section alt-bg">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>B.Tech CSE (AI & DS)</h3>
-                        <h4>Takshashila University</h4>
-                        <p class="score">CGPA: 7.02</p>
-                    </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-glow"><i class='bx bx-rocket'></i> Let's Connect</a>
+                    <a href="#projects" class="btn btn-outline"><i class='bx bx-code-block'></i> View Projects</a>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Intermediate (MPC)</h3>
-                        <h4>Sri Chaitanya Jr College</h4>
-                        <p class="score">Score: 70.4%</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>SSC</h3>
-                        <h4>ZP High School</h4>
-                        <p class="score">GPA: 8.7</p>
-                    </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/t-gangadhar-reddy-149904313" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/gangadharreddy065-create" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:gangadharreddy065@gmail.com" title="Email"><i class='bx bx-envelope'></i></a>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-image">
+                <div class="profile-glow"></div>
+                <div class="image-wrapper">
+                    <img src="profile.png" alt="T. Gangadhar Reddy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Gangadhar+Reddy&background=8b5cf6&color=fff&size=400&font-size=0.35';">
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+        <!-- About / Career Objective Section -->
+        <section id="about" class="section">
+            <h2 class="section-heading"><span>01.</span> Career Objective</h2>
+            <div class="glass-container about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a Computer Science Engineering student specializing in <strong>AI & Data Science</strong> at Takshashila University, with a deep interest in Full Stack Development, Data Analytics, and AI-driven applications. 
+                    </p>
+                    <p>
+                        Skilled in Python, SQL, modern HTML/CSS/JS, and GitHub, I have built robust systems like a real-time face-liveness check AI and chatbot billing architectures. I thrive on competing in high-intensity events, including national hackathons like the <strong>Smart India Hackathon 2025</strong>. I am passionate about engineering clean, highly scalable digital structures that leverage automated intelligence to solve real-world problems.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>7.02</h3>
+                        <p>B.Tech CGPA</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>10+</h3>
+                        <p>Tech Certifications</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>3+</h3>
+                        <p>Hackathons Conquered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-heading"><span>02.</span> Educational Journey</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-container">
+                            <span class="timeline-date">2022 - Present</span>
+                            <h3>B.Tech CSE (AI & DS)</h3>
+                            <h4>Takshashila University</h4>
+                            <p class="score"><i class='bx bx-award'></i> Cumulative CGPA: <strong>7.02</strong></p>
+                            <p class="timeline-details">Specializing in Advanced Machine Learning, Data Structures, Deep Learning Foundations, and Database Management Systems.</p>
+                        </div>
+                    </div>
+                    <!-- Education 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-container">
+                            <span class="timeline-date">2020 - 2022</span>
+                            <h3>Intermediate (MPC)</h3>
+                            <h4>Sri Chaitanya Junior College</h4>
+                            <p class="score"><i class='bx bx-award'></i> Score: <strong>70.4%</strong></p>
+                            <p class="timeline-details">Focused on Mathematics, Physics, and Chemistry (MPC) with a strong foundation in logical reasoning and algebraic modeling.</p>
+                        </div>
+                    </div>
+                    <!-- Education 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-container">
+                            <span class="timeline-date">Completed 2020</span>
+                            <h3>SSC (Secondary School)</h3>
+                            <h4>ZP High School</h4>
+                            <p class="score"><i class='bx bx-award'></i> GPA: <strong>8.7</strong></p>
+                            <p class="timeline-details">Completed secondary school education with high credits in general mathematics and sciences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-heading"><span>03.</span> Technical Arsenal</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Languages</h3>
-                    <p>Python, SQL, JavaScript (Basics)</p>
+                <!-- Skill Category 1 -->
+                <div class="skill-category glass-container">
+                    <div class="skill-cat-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python (Core & AI Libs)</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL (MySQL/SQLite)</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML5 / CSS3 / ES6 JS</span><span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <i class='bx bx-layout'></i>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, React.js (Basics), Next.js (Basics)</p>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category glass-container">
+                    <div class="skill-cat-header">
+                        <i class='bx bx-brain'></i>
+                        <h3>AI & Data Science</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Computer Vision (OpenCV/MediaPipe)</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Analysis (Pandas/NumPy)</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Machine Learning (Scikit-Learn)</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <i class='bx bx-data'></i>
-                    <h3>Database</h3>
-                    <p>MySQL, SQLite</p>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category glass-container">
+                    <div class="skill-cat-header">
+                        <i class='bx bx-window-alt'></i>
+                        <h3>Frontend & Frameworks</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Flask (Backend Dev)</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React & Next.js (Basics)</span><span>65%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>No-Code Builder (Bubble.io)</span><span>70%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <i class='bx bx-brain'></i>
-                    <h3>Data & AI</h3>
-                    <p>Pandas, NumPy, Scikit-learn, Computer Vision, Excel</p>
-                </div>
-                <div class="skill-category">
-                    <i class='bx bx-wrench'></i>
-                    <h3>Tools & Platforms</h3>
-                    <p>GitHub, VS Code, Bubble.io</p>
-                </div>
-                <div class="skill-category">
-                    <i class='bx bx-bulb'></i>
-                    <h3>Concepts</h3>
-                    <p>OOPs, DBMS, Problem Solving</p>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category glass-container">
+                    <div class="skill-cat-header">
+                        <i class='bx bx-wrench'></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <p class="tools-list">
+                        <span class="tool-tag"><i class='bx bxl-git'></i> Git & GitHub</span>
+                        <span class="tool-tag"><i class='bx bxl-visual-studio'></i> VS Code</span>
+                        <span class="tool-tag"><i class='bx bx-data'></i> DBMS Systems</span>
+                        <span class="tool-tag"><i class='bx bx-file-blank'></i> Microsoft Excel</span>
+                        <span class="tool-tag"><i class='bx bx-network-chart'></i> Anaconda / Jupyter</span>
+                    </p>
+                    <div class="skill-cat-header" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                        <i class='bx bx-bulb'></i>
+                        <h3>Concepts</h3>
+                    </div>
+                    <p class="concepts-list">
+                        Object-Oriented Programming (OOPs), Relational Databases (DBMS), Feature Engineering, Hackathon Dynamics, Anti-spoofing Algorithms.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section alt-bg">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-heading"><span>04.</span> Featured Creations</h2>
+            
+            <!-- Category Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & Computer Vision</button>
+                <button class="filter-btn" data-filter="full-stack">Full-Stack / Databases</button>
+                <button class="filter-btn" data-filter="web-dev">Web Apps</button>
+            </div>
+
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card glass-container hover-tilt" data-category="ai-ml">
                     <div class="project-content">
-                        <span class="project-tag">Real-time AI attendance system with anti-proxy & liveness detection</span>
+                        <span class="project-badge"><i class='bx bx-shield-quarter'></i> Anti-Proxy Liveness</span>
                         <h3>Smart Attendance System</h3>
-                        <p>Built independently, this system uses Computer Vision and AI to fully automate attendance monitoring. It goes beyond basic face recognition — implementing liveness detection to block photo spoofing, 2D vs 3D detection to prevent proxy attempts, head direction tracking for attention analysis, and engagement scoring for behavior monitoring. The real-time dashboard gives instant visibility into attendance status. Built with Python, OpenCV, face_recognition, MediaPipe, Flask, and SQLite.</p>
+                        <p>
+                            Built independently, this system uses Computer Vision and AI to fully automate attendance. It implements <strong>face liveness detection</strong> to prevent photo-spoofing, 2D vs 3D detection to stop proxies, and head direction tracking for real-time attention evaluation. Backed by an automated dashboard interface.
+                        </p>
                         <div class="project-tech">
-                            <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Flask</span><span>Computer Vision</span><span>AI</span>
+                            <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Flask</span><span>SQLite</span>
                         </div>
                     </div>
                 </div>
+
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card glass-container hover-tilt" data-category="full-stack">
                     <div class="project-content">
-                        <span class="project-tag">Full-stack retail billing platform with integrated AI chatbot</span>
-                        <h3>AI-Driven Smart Billing System</h3>
-                        <p>A complete billing solution built with HTML/CSS/JavaScript frontend and Python Flask backend, tested with 100+ products and multiple billing transactions. The integrated chatbot handles product queries, suggests items by category, guides users through billing flows, and generates invoices — reducing manual effort significantly. Supports scalable product and customer record management for small retail environments. Backed by SQLite for reliable data storage.</p>
+                        <span class="project-badge"><i class='bx bx-bot'></i> Full-Stack AI Integration</span>
+                        <h3>AI-Driven Smart Billing</h3>
+                        <p>
+                            A complete retail billing platform integrated with a customer assistance chatbot. The assistant helps consumers category-browse items, processes transactions, and auto-generates invoice receipts. Tested successfully with 100+ product catalog items in small retail layouts.
+                        </p>
                         <div class="project-tech">
-                            <span>Python</span><span>Flask</span><span>JavaScript</span><span>SQLite</span><span>Chatbot</span><span>Full Stack</span>
+                            <span>Python</span><span>Flask</span><span>JavaScript</span><span>SQLite</span><span>Chatbot</span>
                         </div>
                     </div>
                 </div>
+
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card glass-container hover-tilt" data-category="web-dev">
                     <div class="project-content">
-                        <span class="project-tag">Smart tourism platform with destination discovery & trip planning</span>
+                        <span class="project-badge"><i class='bx bx-navigation'></i> Location Discovery</span>
                         <h3>Kerala Travel App</h3>
-                        <p>A responsive travel web application designed to help users explore Kerala's destinations. Features include tourist spot discovery, hotel and place recommendations, travel package information, location-based suggestions, and an itinerary planning interface. Built with a focus on clean UI/UX for a seamless user experience. Currently deployed as a fully functional demo prototype.</p>
+                        <p>
+                            A clean, responsive web application designed to help tourists discover spots, lodging guides, and curated packages across Kerala. Features an itinerary planning page and showcases modern front-end layout paradigms and responsive optimization.
+                        </p>
                         <div class="project-tech">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span><span>Web Development</span>
+                            <span>HTML5</span><span>CSS3</span><span>ES6 JS</span><span>UI/UX Design</span><span>Responsive</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience & Certifications -->
-    <section id="experience" class="section">
-        <div class="container">
+        <!-- Experience & Certifications -->
+        <section id="experience" class="section">
+            <h2 class="section-heading"><span>05.</span> Milestones & Credentials</h2>
             <div class="dual-col">
+                <!-- Internships & Hackathons Column -->
                 <div class="col">
-                    <h2 class="section-title">Internships & Hackathons</h2>
-                    <ul class="list-items">
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-briefcase'></i>
-                                <div>
-                                    <strong>Android Developer Virtual Internship</strong>
-                                    <span>EduSkills</span>
-                                </div>
+                    <h3 class="col-title"><i class='bx bx-briefcase'></i> Hackathons & Internships</h3>
+                    <ul class="milestone-list">
+                        <!-- Item 1 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bx-analyse'></i></div>
+                            <div class="milestone-info">
+                                <strong>AI Deployment & Automation Internship</strong>
+                                <span>EduSkills Virtual Internship</span>
                             </div>
-                            <a href="certificates/android-internship.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="certificates/ai-deployment.jpg" class="view-cert-link" title="Open Certificate Viewer"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-briefcase'></i>
-                                <div>
-                                    <strong>Virtual Internship Program In Python</strong>
-                                    <span>CodSoft</span>
-                                </div>
+                        <!-- Item 2 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bxl-android'></i></div>
+                            <div class="milestone-info">
+                                <strong>Android Developer Virtual Internship</strong>
+                                <span>EduSkills Virtual Internship</span>
                             </div>
-                            <a href="certificates/codsoft-python.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="certificates/android-internship.jpg" class="view-cert-link" title="Open Certificate Viewer"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-briefcase'></i>
-                                <div>
-                                    <strong>AI Deployment & Automation Internship</strong>
-                                    <span>EduSkills</span>
-                                </div>
+                        <!-- Item 3 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bxl-python'></i></div>
+                            <div class="milestone-info">
+                                <strong>Virtual Internship In Python</strong>
+                                <span>CodSoft Internship Program</span>
                             </div>
-                            <a href="certificates/ai-deployment.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="certificates/codsoft-python.jpg" class="view-cert-link" title="Open Certificate Viewer"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-trophy'></i>
-                                <div>
-                                    <strong>Smart India Hackathon (SIH) 2025</strong>
-                                    <span>Participant</span>
-                                </div>
+                        <!-- Item 4 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bx-trophy'></i></div>
+                            <div class="milestone-info">
+                                <strong>Smart India Hackathon (SIH) 2025</strong>
+                                <span>National Level 24Hr Competitor</span>
                             </div>
-                            <a href="#" class="view-cert-link" title="Upload and link your certificate here">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="sih-coming" class="view-cert-link coming-soon-cert" title="Certificate Processing"><i class='bx bx-time'></i> Pending</button>
                         </li>
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-trophy'></i>
-                                <div>
-                                    <strong>National Level 24-Hour Hackathon</strong>
-                                    <span>SMVEC</span>
-                                </div>
+                        <!-- Item 5 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bx-award'></i></div>
+                            <div class="milestone-info">
+                                <strong>National Level 24-Hour Hackathon</strong>
+                                <span>Sri Manakula Vinayagar Eng. College (SMVEC)</span>
                             </div>
-                            <a href="certificates/smvec-hackathon.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="certificates/smvec-hackathon.jpg" class="view-cert-link" title="Open Certificate Viewer"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="list-info">
-                                <i class='bx bxs-trophy'></i>
-                                <div>
-                                    <strong>XEcanclave 24-Hour Hackathon</strong>
-                                    <span>by Xebia</span>
-                                </div>
+                        <!-- Item 6 -->
+                        <li class="milestone-item glass-container">
+                            <div class="milestone-icon"><i class='bx bx-chip'></i></div>
+                            <div class="milestone-info">
+                                <strong>XEcanclave 24-Hour Hackathon</strong>
+                                <span>Hosted by Xebia Academic Partners</span>
                             </div>
-                            <a href="certificates/xebia-hackathon.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                            <button data-cert="certificates/xebia-hackathon.jpg" class="view-cert-link" title="Open Certificate Viewer"><i class='bx bx-show'></i> View</button>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h2 class="section-title">Certifications</h2>
-                    <ul class="list-items certs">
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> IBM Data Analysis with Python</div>
-                            <a href="certificates/ibm-data-analysis.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
-                        </li>
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> IBM Python 101 for Data Science</div>
-                            <a href="certificates/ibm-python101.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
-                        </li>
 
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> Python Using AI Workshop</div>
-                            <a href="certificates/python-using-ai.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                <!-- Certifications Column -->
+                <div class="col">
+                    <h3 class="col-title"><i class='bx bx-certification'></i> Professional Certifications</h3>
+                    <ul class="certifications-list">
+                        <!-- Cert 1 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>IBM Data Analysis with Python</span>
+                            </div>
+                            <button data-cert="certificates/ibm-data-analysis.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> Stock Market Using AI Workshop</div>
-                            <a href="certificates/stock-market-ai.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                        <!-- Cert 2 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>IBM Python 101 for Data Science</span>
+                            </div>
+                            <button data-cert="certificates/ibm-python101.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> No Code Web App Development with Bubble.io</div>
-                            <a href="certificates/bubble-no-code.png" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                        <!-- Cert 3 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>Bubble.io No-Code Web App Dev</span>
+                            </div>
+                            <button data-cert="certificates/bubble-no-code.png" class="view-cert-link"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> Deep Learning Fundamentals</div>
-                            <a href="certificates/deep-learning.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                        <!-- Cert 4 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>IBM IoT Watson Swift & Node-RED</span>
+                            </div>
+                            <button data-cert="certificates/robots-iot-ibm.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
                         </li>
-                        <li>
-                            <div class="cert-name"><i class='bx bx-check-circle'></i> Robots are coming! Build IoT apps with Watson, Swift & Node-RED (IBM)</div>
-                            <a href="certificates/robots-iot-ibm.jpg" class="view-cert-link" target="_blank" title="View Certificate">View <i class='bx bx-link-external'></i></a>
+                        <!-- Cert 5 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>Deep Learning Fundamentals</span>
+                            </div>
+                            <button data-cert="certificates/deep-learning.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
+                        </li>
+                        <!-- Cert 6 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>Python Using AI Workshop</span>
+                            </div>
+                            <button data-cert="certificates/python-using-ai.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
+                        </li>
+                        <!-- Cert 7 -->
+                        <li class="cert-item glass-container">
+                            <div class="cert-details">
+                                <i class='bx bx-badge-check'></i>
+                                <span>Stock Market Analytics using AI</span>
+                            </div>
+                            <button data-cert="certificates/stock-market-ai.jpg" class="view-cert-link"><i class='bx bx-show'></i> View</button>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section alt-bg">
-        <div class="container text-center">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-desc">I am currently open to new opportunities, internships, and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
-            
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <i class='bx bx-envelope'></i>
-                    <h3>Email</h3>
-                    <a href="mailto:gangadharreddy065@gmail.com">gangadharreddy065@gmail.com</a>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-heading"><span>06.</span> Let's Create Together</h2>
+            <div class="contact-grid">
+                <!-- Info details -->
+                <div class="contact-info-panel glass-container">
+                    <h3>Get In Touch</h3>
+                    <p class="contact-subtitle">I'm currently seeking internships, cooperative programs, or tech collaborations. Drop a line and let's configure something great!</p>
+                    
+                    <div class="contact-cards-vertical">
+                        <div class="info-card-sub">
+                            <i class='bx bx-envelope'></i>
+                            <div>
+                                <h4>Email Me</h4>
+                                <a href="mailto:gangadharreddy065@gmail.com">gangadharreddy065@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-card-sub">
+                            <i class='bx bx-phone'></i>
+                            <div>
+                                <h4>Call Me</h4>
+                                <a href="tel:+919603228769">+91 9603228769</a>
+                            </div>
+                        </div>
+                        <div class="info-card-sub">
+                            <i class='bx bx-map'></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Kadapa, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-card">
-                    <i class='bx bx-phone'></i>
-                    <h3>Phone</h3>
-                    <a href="tel:+919603228769">+91 9603228769</a>
-                </div>
-                <div class="contact-card">
-                    <i class='bx bxl-linkedin'></i>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/t-gangadhar-reddy-149904313" target="_blank">Connect with me</a>
+
+                <!-- Contact Message Form -->
+                <div class="contact-form-panel glass-container">
+                    <h3>Send a Direct Command</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Name</label>
+                                <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email</label>
+                                <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" placeholder="Project Collaboration Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5" placeholder="Let's build a smart computer vision pipeline..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-glow form-submit-btn"><i class='bx bx-send'></i> Transmit Message</button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback-message"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <p>&copy; 2026 T. Gangadhar Reddy. Built with precision and passion.</p>
+            <p>&copy; 2026 T. Gangadhar Reddy. Engineered with AI-based pair coding.</p>
+            <p class="footer-repo-link">Repository: <a href="https://github.com/gangadharreddy065-create/gangadhar-portfolio" target="_blank">gangadhar-portfolio <i class='bx bx-link-external'></i></a></p>
         </div>
     </footer>
 
+    <!-- Interactive Certificate Viewer Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content glass-container">
+            <div class="modal-header">
+                <h3 id="modalCertTitle">Certificate Viewer</h3>
+                <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modalCertImg" src="" alt="Credential Proof Loading...">
+                <div id="modalCertMsg" class="modal-feedback-coming"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Bundle -->
     <script src="script.js"></script>
 </body>
 </html>
