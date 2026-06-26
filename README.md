@@ -32,8 +32,6 @@ Machine learning projects using Python.
 
 ## 📫 Connect With Me
 
-## 📫 Connect With Me
-
 🌐 Portfolio: [gangadharreddy-portfolio](https://gangadharreddy-portfolio.netlify.app)
 
 💼 LinkedIn: [T. Gangadhar Reddy](https://www.linkedin.com/in/t-gangadhar-reddy-149904313)
