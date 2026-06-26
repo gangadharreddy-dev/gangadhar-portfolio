@@ -11,7 +11,7 @@ I build real-world applications using:
 ## 🛠 Tech Stack
 
 💻 Languages:
-Python | Java | JavaScript | TypeScript
+Python | JavaScript | 
 
 🌐 Frontend:
 React.js | HTML | CSS
